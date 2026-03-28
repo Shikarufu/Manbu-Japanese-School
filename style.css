@@ -204,6 +204,9 @@ span {
     width: 220px;
     height: 220px;               /* let container span full width */
   }
+  .foot{
+    font-size: 13px;
+  }
 
   
 }
@@ -244,21 +247,71 @@ span {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
+  .foot{
+    font-size: 10px;
+   }
 }
 
 
+@media (max-width: 400px) {
+  nav {
+    flex-direction: row;       /* keep horizontal */
+    justify-content: center;   /* center items */
+    flex-wrap: wrap;           /* allow wrapping if too many links */
+    text-align: center;
+  }
+
+  nav h2 {
+    flex: 1 1 100%;            /* logo/title on its own line */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    display: inline-block;     /* keep links side by side */
+    margin: 5px 8px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .hero-img img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .foot{
+    font-size: 8px;
+
+
+  }
+}
 
 /* Apply hover effect permanently on devices without hover (mobile/tablet) */
 @media (hover: none) {
   .hero-img img {
     transform: scale(1.05);
   }
+  .nav-links a{
+    text-decoration: none;
+  }
+
 }
 
 
 .Home{
   text-decoration: underline;
   text-decoration-color: white;
+  color: cyan;
 }
 
 .nav-links a:hover{
@@ -278,10 +331,10 @@ span {
 }
 
 .wrapper{
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .hero{
-  flex:1;
+  flex: 1;
 }
