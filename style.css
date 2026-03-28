@@ -265,3 +265,23 @@ span {
   text-decoration: underline;
   text-decoration-color: white;
 }
+
+.foot{
+  background: rgb(255, 213, 219);
+  max-width: 78%;
+  text-align: center;
+  margin: 20px auto 0px;
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(246, 120, 219);
+  
+}
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.hero{
+  flex:1;
+}
