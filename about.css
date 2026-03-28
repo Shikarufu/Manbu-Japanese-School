@@ -104,7 +104,7 @@ nav a:hover {
   margin: 20px auto;
   margin-top: 50px;
   width: 90%;
-  max-width: 1200px;
+  max-width: 2200px;
   background: rgb(255, 213, 219);
   backdrop-filter: blur(15px);
   border-radius: 20px;
@@ -190,6 +190,13 @@ nav a:hover {
 
 
   }
+  .left img{
+      left: 10px;
+      top: 0;
+      margin-right: 10px;
+      width: 80px;
+      height: 80px;
+    }
 
   
 }
@@ -232,9 +239,17 @@ nav a:hover {
   }
   .foot{
     font-size: 10px;
-
-
   }
+  
+  .left img{
+      left: 10px;
+      top: 0;
+      margin-right: 10px;
+      width: 80px;
+      height: 80px;
+    }
+
+    
 }
 @media (max-width: 400px) {
   nav {
@@ -292,6 +307,7 @@ nav a:hover {
 .About{
   text-decoration: underline;
   text-decoration-color: white;
+  color: cyan;
 }
 
 .nav-links a:hover{
@@ -311,10 +327,25 @@ nav a:hover {
 }
 
 .wrapper{
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .hero{
   flex:1;
 }
+
+.left{
+  position: relative;
+}
+
+.left img{
+  position: fixed;
+  top:10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  transition: 0.3s;
+} 
